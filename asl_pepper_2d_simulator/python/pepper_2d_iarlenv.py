@@ -101,6 +101,7 @@ def populate_iaenv_args(parser):
                         this is a hack to get it running.""",)
     parser.add_argument('--verbose', action='store_true', help='print more information',)
     parser.add_argument('--dt', type=float, default=0.2, help='simulation time increment')
+    parser.add_argument('--export-logs', action='store_true', help='saves logfiles with planning info for ia_dashboard',)
     # add IA args
     populate_sim_args(parser)
     # add RL args
